@@ -1,0 +1,26 @@
+{
+    "classes": [
+        "instagram-text-logo",
+        "navbar",
+        "nav-item",
+        "nav-name",
+        "story-row",
+        "story-name-container",
+        "story-img",
+        "story-name",
+        "post-column",
+        "post-container",
+        "info-row",
+        "user-profile",
+        "post",
+        "post-details",
+        "likeShareCommand",
+        "command-box",
+        "input-box",
+        "hide",
+        "mainRow",
+        "suggessions",
+        "username-and-name-container",
+        "nav-sm"
+    ]
+}

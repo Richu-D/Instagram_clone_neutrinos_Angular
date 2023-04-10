@@ -1,0 +1,201 @@
+/*Importing default angular material css theme. */
+
+@import "@angular/material/prebuilt-themes/deeppurple-amber.css";
+@import "nDefaults.scss";
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css";
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    // outline: 1px solid red;
+    // background-color: rgba(0, 0, 255, 0.089);
+}
+.instagram-text-logo{
+    width: 150px;
+    margin:50px;
+}
+.navbar{
+    position:fixed;
+    bottom: 0;
+    background-color: white;
+    width: 100%;
+    border-right: 1px solid  #dadada;
+}
+
+.nav-item{
+        padding:10px;
+        border-radius: 50px;
+        margin: 0px 5px;
+        cursor: pointer;
+        min-width: 200px;
+}
+.nav-name{
+    display: none;
+}
+
+.story-row{
+    margin:2rem 10px;
+    overflow-y: auto;
+    max-width: 100%;
+}
+.story-row::-webkit-scrollbar{
+    display: none;
+}
+
+.story-name-container{
+    margin:5px;
+}
+
+.story-img{
+    width: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    padding: 3px;
+    background: linear-gradient(to bottom, rgba(2, 131, 252, 0.5), rgba(14, 243, 129, 0.5),rgba(252, 10, 2, 0.5), rgba(243, 14, 174, 0.5),rgba(2, 131, 252, 0.5), rgba(14, 243, 129, 0.5),rgba(252, 10, 2, 0.5), rgba(243, 14, 174, 0.5),rgba(2, 131, 252, 0.5), rgba(14, 243, 129, 0.5),rgba(252, 10, 2, 0.5), rgba(243, 14, 174, 0.5))
+}
+
+.story-name{
+
+}
+.post-column{
+    margin:10px;
+}
+.post-container{
+    margin:0px 150px;
+    width: 400px;
+}
+.info-row{
+    // margin-bottom: 10px;
+    width: 100%;
+}
+.info-row div{
+    align-self: center;
+    font-size: 1.1rem;
+}
+
+//user profile pic on the post and the command
+.user-profile{
+    width: 40px;
+    border-radius: 50%;
+}
+
+
+// image or video
+.post{
+    width: 100%;
+    // margin:0px 10px;
+}
+
+.post-details p{
+    // margin:3px
+}
+
+.likeShareCommand{
+    gap: 8px;
+}
+
+.command-box{
+    width: 100%;
+}
+
+
+.input-box{
+  width:50%;
+}
+
+.hide{
+    display: none;
+}
+
+// for laptops
+    @media only screen and (min-width: 1024px) {
+        .hide{
+         display: block;
+        }
+
+  .nav-name{
+    display: block;
+    }
+    .nav-item:hover{
+        background-color: #dadada;
+    }
+    .nav-item span{
+    padding-left: 8px;
+    font-size: 1.2rem;
+    }
+
+    .navbar{
+        flex-direction: column !important;
+        width: 20%;
+        height: 100%;
+    }
+    .mainRow{
+        margin-left: 20%;
+    }
+    
+    .suggessions{
+        display: block;
+        width: 350px;
+        margin:2rem 10px;
+    }
+    .suggessions img{
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        align-self: center;
+        // padding: 5px 10px;
+        // object-fit: cover;
+    }
+    .suggessions h2,.suggessions span{
+        margin:10px 0px 4px 10px;
+    }
+    .suggessions button{
+        color: #0095F6;
+        font-weight: bold;
+    }
+    .suggessions button:hover{
+        
+    }
+    .username-and-name-container{
+        margin-right: 40px;
+    }
+
+    .nav-sm{
+        max-width: 100%;
+        flex-direction: column !important;
+        margin: 15px;
+    }
+    .nav-sm .nav-item{
+        margin: 10px 0px;
+    }
+
+}
+
+// small device
+@media only screen and (max-width: 1024px) {
+
+  .suggessions {
+    display: none !important;
+  }
+  .post-column{
+    margin:0px auto;
+}
+
+.post-container{
+    margin:0px auto;
+    width: 295px;
+}
+.nav-item{
+    min-width: 10px;
+}
+.hide{
+    display: none !important;
+}
+.nav-sm{
+    width: 100%;
+    justify-content: space-evenly !important;
+}
+
+
+}
