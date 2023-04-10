@@ -56,5 +56,61 @@
         "generateNext": false,
         "serviceName": "navbarComponent",
         "generated": true
+    },
+    {
+        "id": "sd_BnQsTZHCOc8emsIr",
+        "type": "PageStart",
+        "z": "sd_W1jueSNkFlur75gV",
+        "viewType": "pages",
+        "nodeType": "start",
+        "name": "goto",
+        "outputs": 1,
+        "inputVariables": [
+            {
+                "key": "path",
+                "defaultValue": {
+                    "type": "any",
+                    "value": ""
+                },
+                "output": false
+            }
+        ],
+        "localVariables": [],
+        "flow_type": "sync",
+        "functionName": "goto",
+        "category": "General",
+        "x": 60,
+        "y": 180,
+        "wires": [
+            [
+                "sd_Dyu5Gh2ukt1z1vMO"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "navbarComponent"
+    },
+    {
+        "id": "sd_Dyu5Gh2ukt1z1vMO",
+        "type": "Navigation",
+        "z": "sd_W1jueSNkFlur75gV",
+        "viewType": "client-pages",
+        "nodeType": "flow",
+        "name": "",
+        "pathMap": {
+            "type": "bh.input",
+            "value": "path"
+        },
+        "functionName": "sd_Dyu5Gh2ukt1z1vMO",
+        "category": "Navigation",
+        "x": 180,
+        "y": 180,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "navbarComponent",
+        "generated": true
     }
 ]

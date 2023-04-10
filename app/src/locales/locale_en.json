@@ -2,5 +2,21 @@
     "localeId": "en",
     "localeName": "English",
     "isDefaultLanguage": true,
-    "properties": {}
+    "properties": {
+        "Notification": "Notification",
+        "Home": "Home",
+        "Search": "Search",
+        "Explore": "Explore",
+        "Reels": "Reels",
+        "Messages": "Messages",
+        "Create": "Create",
+        "Profile": "Profile",
+        "Switch": "Switch",
+        "EditProfile": "Edit Profile",
+        "Posts": "Posts",
+        "Followers": "Followers",
+        "Following": "Following",
+        "Saved": "Saved",
+        "Tagged": "Tagged"
+    }
 }

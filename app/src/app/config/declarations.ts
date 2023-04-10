@@ -15,6 +15,8 @@ window['neutrinos'] = {
 };
 
 //CORE_REFERENCE_IMPORTS
+//CORE_REFERENCE_IMPORT-ProfileComponent
+import { ProfileComponent } from '../components/Layout/Profile/Profile.component';
 //CORE_REFERENCE_IMPORT-StorysComponent
 import { StorysComponent } from '../components/Components/Storys/Storys.component';
 //CORE_REFERENCE_IMPORT-PostComponent
@@ -55,6 +57,8 @@ export const appDeclarations = [
   PageNotFoundComponent,
   ArtImgSrcDirective,
   //CORE_REFERENCE_PUSH_TO_DEC_ARRAY
+  //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-ProfileComponent
+  ProfileComponent,
   //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-StorysComponent
   StorysComponent,
   //CORE_REFERENCE_PUSH_TO_DEC_ARRAY-PostComponent
@@ -89,6 +93,7 @@ export const appProviders = [
 // CORE_REFERENCE_PUSH_TO_ROUTE_ARRAY_START
 export const appRoutes = [
   { path: 'Home', component: HomeComponent },
+  { path: 'Profile', component: ProfileComponent },
   { path: '', redirectTo: 'Home', pathMatch: 'full' },
   { path: '**', component: PageNotFoundComponent },
 ];

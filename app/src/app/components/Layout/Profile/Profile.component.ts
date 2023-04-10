@@ -12,17 +12,16 @@ import {
 import { SDBaseService } from 'app/n-services/SDBaseService'; //_splitter_
 import { SDPageCommonService } from 'app/n-services/sd-page-common.service'; //_splitter_
 import { __NEU_ServiceInvokerService__ } from 'app/n-services/service-caller.service'; //_splitter_
-import { Router } from '@angular/router'; //_splitter_
 //append_imports_end
 
 @Component({
-  selector: 'bh-navbar',
-  templateUrl: './navbar.template.html',
+  selector: 'bh-Profile',
+  templateUrl: './Profile.template.html',
   providers: [
     //appendnew_element_providers
   ],
 })
-export class navbarComponent {
+export class ProfileComponent {
   page: any = { dep: {} };
   constructor(
     private __page_injector__: Injector,
@@ -39,7 +38,7 @@ export class navbarComponent {
       .get(SDPageCommonService)
       .constructFlowObject(this);
     {
-      this.sd_Kf6suvMqYzeNtHoH(bh);
+      this.sd_qCXv6wZICYEsmy08(bh);
     }
   }
 
@@ -51,54 +50,24 @@ export class navbarComponent {
     //append_listeners
   }
 
-  sd_Kf6suvMqYzeNtHoH(bh) {
+  sd_qCXv6wZICYEsmy08(bh) {
     try {
-      bh = this.sd_ECslsIdgBu5LtNMc(bh);
-      //appendnew_next_sd_Kf6suvMqYzeNtHoH
+      bh = this.sd_AIHHEZjwSl1Gehim(bh);
+      //appendnew_next_sd_qCXv6wZICYEsmy08
       return bh;
     } catch (e) {
-      return this.errorHandler(bh, e, 'sd_Kf6suvMqYzeNtHoH');
+      return this.errorHandler(bh, e, 'sd_qCXv6wZICYEsmy08');
     }
   }
 
-  goto(path: any = undefined, ...others) {
+  //appendnew_flow_ProfileComponent_start
+
+  sd_AIHHEZjwSl1Gehim(bh) {
     try {
-      var bh: any = this.__page_injector__
-        .get(SDPageCommonService)
-        .constructFlowObject(this);
-      bh.input = { path: path };
-      bh.local = {};
-
-      bh = this.sd_Dyu5Gh2ukt1z1vMO(bh);
-      //appendnew_next_goto
-    } catch (e) {
-      return this.errorHandler(bh, e, 'sd_BnQsTZHCOc8emsIr');
-    }
-  }
-
-  //appendnew_flow_navbarComponent_start
-
-  sd_ECslsIdgBu5LtNMc(bh) {
-    try {
-      //appendnew_next_sd_ECslsIdgBu5LtNMc
+      //appendnew_next_sd_AIHHEZjwSl1Gehim
       return bh;
     } catch (e) {
-      return this.errorHandler(bh, e, 'sd_ECslsIdgBu5LtNMc');
-    }
-  }
-
-  async sd_Dyu5Gh2ukt1z1vMO(bh) {
-    try {
-      const { paramObj: qprm, path: path } =
-        this.sdService.getPathAndQParamsObj(bh.input.path);
-      await this.__page_injector__
-        .get(Router)
-        .navigate([this.sdService.formatPathWithParams(path, undefined)]);
-
-      //appendnew_next_sd_Dyu5Gh2ukt1z1vMO
-      return bh;
-    } catch (e) {
-      return await this.errorHandler(bh, e, 'sd_Dyu5Gh2ukt1z1vMO');
+      return this.errorHandler(bh, e, 'sd_AIHHEZjwSl1Gehim');
     }
   }
 
@@ -124,5 +93,5 @@ export class navbarComponent {
       throw e;
     }
   }
-  //appendnew_flow_navbarComponent_Catch
+  //appendnew_flow_ProfileComponent_Catch
 }

@@ -5,6 +5,10 @@
             "component": "HomeComponent"
         },
         {
+            "path": "Profile",
+            "component": "ProfileComponent"
+        },
+        {
             "path": "''",
             "redirectTo": "Home",
             "pathMatch": "full",

@@ -1,0 +1,29 @@
+<bh-navbar></bh-navbar>
+<div fxLayout="row wrap" class="mainRow" fxLayoutAlign="start stretch" [fxShow]="true">
+  <div fxLayout="column " style="margin:2rem" fxFlex="100" fxLayoutAlign="start stretch" [fxShow]="true">
+    <div fxLayout="row wrap" fxLayoutAlign="center stretch" [fxShow]="true"><img imgSrc="/Web/img/profile.jpg" style="width:auto;margin-right:50px" class="user-profile">
+      <div fxLayout="column " fxLayoutAlign="start center" [fxShow]="true">
+        <div fxLayout="row wrap" fxLayoutAlign="center center" [fxShow]="true">
+          <div>
+            rtb.kerala</div><button mat-button>{{page.locales.keys.EditProfile}}</button><span class="fa-solid fa-gear">
+                </span>
+        </div>
+        <div fxLayout="row " style="width:300px;margin:15px" class="profile-details-count" fxLayoutAlign="space-around start" [fxShow]="true">
+          <div>
+            0 {{page.locales.keys.Posts}}</div>
+          <div>
+            66 {{page.locales.keys.Followers}}</div>
+          <div>
+            68 {{page.locales.keys.Following}}</div>
+        </div>
+        <div fxLayout="column wrap" fxLayoutAlign="start stretch" [fxShow]="true">
+          <p>
+            Richu </p>
+          <p>
+            Developer</p>
+        </div>
+      </div>
+    </div>
+    <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true"><bh-Storys></bh-Storys></div><mat-tab-group mat-align-tabs="center" color="primary" headerPosition="below"><mat-tab label="{{page.locales.keys.Posts}}"></mat-tab><mat-tab label="{{page.locales.keys.Saved}}"></mat-tab><mat-tab label="{{page.locales.keys.Tagged}}"></mat-tab></mat-tab-group>
+  </div>
+</div>

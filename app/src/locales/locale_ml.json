@@ -1,0 +1,22 @@
+{
+    "localeId": "ml",
+    "localeName": "Malayalam",
+    "isDefaultLanguage": false,
+    "properties": {
+        "Notification": "അറിയിപ്പ്",
+        "Home": "വീട്",
+        "Search": "തിരയുക",
+        "Explore": "പര്യവേക്ഷണം ചെയ്യുക",
+        "Reels": "റീലുകൾ",
+        "Messages": "സന്ദേശങ്ങൾ",
+        "Create": "സൃഷ്ടിക്കാൻ",
+        "Profile": "പ്രൊഫൈൽ",
+        "Switch": "മാറുക",
+        "EditProfile": "പ്രൊഫൈൽ എഡിറ്റ് ചെയ്യുക",
+        "Posts": "പോസ്റ്റുകൾ",
+        "Followers": "അനുയായികൾ",
+        "Following": "പിന്തുടരുന്നു",
+        "Saved": "സംരക്ഷിച്ചു",
+        "Tagged": "ടാഗ് ചെയ്തു"
+    }
+}

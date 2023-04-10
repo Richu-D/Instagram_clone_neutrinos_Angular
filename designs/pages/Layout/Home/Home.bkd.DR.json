@@ -983,7 +983,7 @@
                         },
                         {
                             "_key": "buttonname",
-                            "_value": "Switch",
+                            "_value": "{{page.locales.keys.Switch}}",
                             "_type": "a",
                             "_attrDef": "p",
                             "_useAsLabel": true
