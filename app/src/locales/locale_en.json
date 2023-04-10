@@ -17,6 +17,18 @@
         "Followers": "Followers",
         "Following": "Following",
         "Saved": "Saved",
-        "Tagged": "Tagged"
+        "Tagged": "Tagged",
+        "Follow": "Follow",
+        "SeeAll": "See All",
+        "SuggestionsForYou": "Suggestions for you",
+        "About": "About",
+        "Help": "Help",
+        "Press": "Press",
+        "API": "API",
+        "Jobs": "Jobs",
+        "Privacy": "Privacy",
+        "Terms": "Terms",
+        "Locations": "Locations",
+        "Language": "Language"
     }
 }

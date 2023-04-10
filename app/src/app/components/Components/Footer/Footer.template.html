@@ -1,0 +1,20 @@
+<div fxLayout="column wrap" fxFlex="100" fxLayoutAlign="start stretch" [fxShow]="true">
+  <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true"><span>
+    {{page.locales.keys.About}}</span><span>
+    {{page.locales.keys.Help}}</span><span>
+    {{page.locales.keys.Press}}</span><span>
+    {{page.locales.keys.API}}</span><span>
+    {{page.locales.keys.Jobs}}</span><span>
+    {{page.locales.keys.Privacy}}</span><span>
+    {{page.locales.keys.Terms}}</span><span>
+    {{page.locales.keys.Locations}}</span><mat-form-field [appearance]="&apos;standard&apos;" [floatLabel]="&apos;auto&apos;">
+      <mat-label>{{page.locales.keys.Language}}</mat-label>
+      <mat-select placeholder="{{page.locales.keys.Language}}" [required]="false" (selectionChange)="changeLanguage($event)">
+        <ng-template ngFor let-option [ngForOf]="page.languagesList" let-i="index">
+          <mat-option [value]="option.value">{{option.viewValue}}</mat-option>
+        </ng-template>
+      </mat-select>
+
+    </mat-form-field></div>
+  <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true"></div>
+</div>

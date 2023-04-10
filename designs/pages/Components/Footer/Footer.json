@@ -1,0 +1,209 @@
+[
+    {
+        "id": "sd_NtTYmyzyCWz8KKj3",
+        "type": "tab",
+        "createdDate": "2023-04-10T07:48:11.645Z",
+        "label": "Footer",
+        "disabled": false,
+        "info": "",
+        "functionSeq": 0,
+        "generateNext": true,
+        "serviceName": "FooterComponent"
+    },
+    {
+        "id": "sd_x87IRJ1J5ZIPQ6y0",
+        "type": "OnInit",
+        "z": "sd_NtTYmyzyCWz8KKj3",
+        "viewType": "common",
+        "nodeType": "start",
+        "name": "",
+        "inputVariables": [],
+        "localVariables": [],
+        "outputVariables": [],
+        "pageVariables": [
+            {
+                "key": "languagesList",
+                "defaultValue": {
+                    "type": "any",
+                    "value": ""
+                }
+            }
+        ],
+        "functionName": "sd_x87IRJ1J5ZIPQ6y0",
+        "category": "Lifecycle Events",
+        "x": 30,
+        "y": 30,
+        "wires": [
+            [
+                "sd_Au80SmALOgVjT4w2"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "FooterComponent"
+    },
+    {
+        "id": "sd_Au80SmALOgVjT4w2",
+        "type": "PageVariables",
+        "z": "sd_NtTYmyzyCWz8KKj3",
+        "viewType": "pages",
+        "nodeType": "flow",
+        "name": "",
+        "inputs": 1,
+        "outputs": 1,
+        "operation": "set",
+        "globalVariables": [],
+        "functionName": "sd_Au80SmALOgVjT4w2",
+        "category": "Function",
+        "x": 180,
+        "y": 30,
+        "wires": [
+            [
+                "sd_qp2Df3RuhmcXi3Wi"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "FooterComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_2ubq3ILpR5NZqpuN",
+        "type": "Script",
+        "z": "sd_NtTYmyzyCWz8KKj3",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "page.languagesList = Object.entries(page.locales.languages).map(([key,value])=>{\nreturn {value:key,viewValue:value}\n})\n\npage.locales.language = bh.local.preferedLanguage||'en';",
+        "functionName": "sd_2ubq3ILpR5NZqpuN",
+        "category": "Function",
+        "x": 385,
+        "y": 40,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "FooterComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_0ZAsSauvZvxt4W3v",
+        "type": "PageStart",
+        "z": "sd_NtTYmyzyCWz8KKj3",
+        "viewType": "pages",
+        "nodeType": "start",
+        "name": "changeLanguage",
+        "outputs": 1,
+        "inputVariables": [
+            {
+                "key": "event",
+                "defaultValue": {
+                    "type": "any",
+                    "value": ""
+                },
+                "output": false
+            }
+        ],
+        "localVariables": [],
+        "flow_type": "sync",
+        "functionName": "changeLanguage",
+        "category": "General",
+        "x": 60,
+        "y": 180,
+        "wires": [
+            [
+                "sd_5IPZNn3WWIQWQem8"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "FooterComponent"
+    },
+    {
+        "id": "sd_5IPZNn3WWIQWQem8",
+        "type": "Script",
+        "z": "sd_NtTYmyzyCWz8KKj3",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "page.locales.language = bh.input.event.value;",
+        "functionName": "sd_5IPZNn3WWIQWQem8",
+        "category": "Function",
+        "x": 165,
+        "y": 180,
+        "wires": [
+            [
+                "sd_E8xnmzcuN1vWXBt4"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "FooterComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_E8xnmzcuN1vWXBt4",
+        "type": "Storage",
+        "z": "sd_NtTYmyzyCWz8KKj3",
+        "viewType": "client-pages",
+        "nodeType": "flow",
+        "name": "",
+        "operationType": "setItem",
+        "storageType": "localStorage",
+        "outputs": 1,
+        "key": {
+            "type": "str",
+            "value": "preferedLanguage"
+        },
+        "value": {
+            "type": "bh.input",
+            "value": "event.value"
+        },
+        "resultMapping": {},
+        "functionName": "sd_E8xnmzcuN1vWXBt4",
+        "category": "Storage",
+        "x": 265,
+        "y": 180,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "FooterComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_qp2Df3RuhmcXi3Wi",
+        "type": "Storage",
+        "z": "sd_NtTYmyzyCWz8KKj3",
+        "viewType": "client-pages",
+        "nodeType": "flow",
+        "name": "",
+        "operationType": "getItem",
+        "storageType": "localStorage",
+        "outputs": 1,
+        "key": {
+            "type": "str",
+            "value": "preferedLanguage"
+        },
+        "value": {},
+        "resultMapping": {
+            "type": "bh.local",
+            "value": "preferedLanguage"
+        },
+        "functionName": "sd_qp2Df3RuhmcXi3Wi",
+        "category": "Storage",
+        "x": 280,
+        "y": 40,
+        "wires": [
+            [
+                "sd_2ubq3ILpR5NZqpuN"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "FooterComponent",
+        "generated": true
+    }
+]
