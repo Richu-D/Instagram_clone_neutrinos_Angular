@@ -1,27 +1,22 @@
-<div fxLayout="row wrap" class="navbar" fxLayoutAlign="start stretch" [fxShow]="true"><img imgSrc="/Web/img/instagram-text-logo.png" style="cursor:pointer;" (click)="goto(&apos;/Home&apos;)" class="hide instagram-text-logo">
-  <div fxLayout="row " class="nav-sm" fxLayoutAlign="none none" [fxShow]="true">
-    <div fxLayout="row wrap" class="nav-item" fxLayoutAlign="none center" [fxShow]="true" (click)="goto(&apos;/Home&apos;)"><span class="fa-solid fa-house">
+<header>
+  <nav>
+    <div fxLayout="row wrap" class="navbar" fxLayoutAlign="start stretch" [fxShow]="true"><img imgSrc="/Web/img/instagram-text-logo.png" style="cursor:pointer;" (click)="goto(&apos;/home&apos;)" class="hide instagram-text-logo">
+      <div fxLayout="row " class="nav-sm" fxLayoutAlign="none none" [fxShow]="true">
+        <div fxLayout="row wrap" class="{{navItem.class}} nav-item" fxLayoutAlign="none center" [fxShow]="true" (click)="goto(navItem.redirect)" *ngFor="let navItem of page.navItems"><span class="icon">
                 </span><span class="nav-name">
-      {{page.locales.keys.Home}}</span></div>
-    <div fxLayout="row wrap" class="hide nav-item" fxLayoutAlign="start stretch" [fxShow]="true"><span class="fa-solid fa-magnifying-glass">
-                </span><span class="nav-name">
-      {{page.locales.keys.Search}}</span></div>
-    <div fxLayout="row wrap" class="nav-item" fxLayoutAlign="start stretch" [fxShow]="true"><span class="fa-compass fa-solid">
-                </span><span class="nav-name">
-      {{page.locales.keys.Explore}}</span></div>
-    <div fxLayout="row wrap" class="nav-item" fxLayoutAlign="start stretch" [fxShow]="true"><span class="fa-video fa-solid">
-                </span><span class="nav-name">
-      {{page.locales.keys.Reels}}</span></div>
-    <div fxLayout="row wrap" class="nav-item" fxLayoutAlign="start stretch" [fxShow]="true"><span class="fa-brands fa-facebook-messenger">
-                </span><span class="nav-name">
-      {{page.locales.keys.Messages}}</span></div>
-    <div fxLayout="row wrap" class="hide nav-item" fxLayoutAlign="start stretch" [fxShow]="true"><span class="fa-heart fa-regular">
-                </span><span class="nav-name">
-      {{page.locales.keys.Notification}}</span></div>
-    <div fxLayout="row wrap" class="nav-item" fxLayoutAlign="start stretch" [fxShow]="true"><span class="fa-regular fa-square-plus">
-                </span><span class="nav-name">
-      {{page.locales.keys.Create}}</span></div>
-    <div fxLayout="row wrap" class="nav-item" fxLayoutAlign="start stretch" [fxShow]="true" (click)="goto(&apos;/Profile&apos;)"><img imgSrc="/Web/img/profile.jpg" style="width:30px" class="user-profile"><span class="nav-name">
-      {{page.locales.keys.Profile}}</span></div>
-  </div>
-</div>
+          {{page.locales.keys[navItem.name]}}</span></div>
+        <div fxLayout="row wrap" class="nav-item" fxLayoutAlign="start stretch" [fxShow]="true" (click)="goto(&apos;/profile&apos;)"><img imgSrc="/Web/img/profile.jpg" style="width:30px" class="user-profile"><span class="nav-name">
+          {{page.locales.keys.Profile}}</span></div>
+      </div>
+    </div>
+  </nav>
+  <nav>
+    <div fxLayout="row " class="searchAndNotification" fxLayoutAlign="space-between center" [fxShow]="true">
+      <div class="search-wrapper">
+        <span class="icon search-icon fa-solid fa-magnifying-glass">
+                </span><input placeholder="Search" class="searchBox">
+      </div><span style="padding:10px;" class="icon fa-heart fa-regular">
+                </span>
+    </div>
+  </nav>
+</header>

@@ -53,7 +53,7 @@ export class navbarComponent {
 
   sd_Kf6suvMqYzeNtHoH(bh) {
     try {
-      bh = this.sd_ECslsIdgBu5LtNMc(bh);
+      bh = this.sd_vUQkRKSeGyoPkqw2(bh);
       //appendnew_next_sd_Kf6suvMqYzeNtHoH
       return bh;
     } catch (e) {
@@ -78,8 +78,59 @@ export class navbarComponent {
 
   //appendnew_flow_navbarComponent_start
 
+  sd_vUQkRKSeGyoPkqw2(bh) {
+    try {
+      const page = this.page;
+      bh.local.navItems = [
+        {
+          name: 'Home',
+          class: 'fa-solid fa-house',
+          redirect: '/home',
+        },
+        {
+          name: 'Search',
+          class: 'fa-solid fa-magnifying-glass hide',
+          redirect: '/search',
+        },
+        {
+          name: 'Explore',
+          class: 'fa-solid fa-compass',
+          redirect: '/explore',
+        },
+        {
+          name: 'Reels',
+          class: 'fa-solid fa-video',
+          redirect: '/reels',
+        },
+        {
+          name: 'Messages',
+          class: 'fa-brands fa-facebook-messenger',
+          redirect: '/messages',
+        },
+        {
+          name: 'Notification',
+          class: 'fa-heart fa-regular hide',
+          redirect: '/notification',
+        },
+        {
+          name: 'Create',
+          class: 'fa-regular fa-square-plus',
+          redirect: '/create',
+        },
+      ];
+
+      bh = this.sd_ECslsIdgBu5LtNMc(bh);
+      //appendnew_next_sd_vUQkRKSeGyoPkqw2
+      return bh;
+    } catch (e) {
+      return this.errorHandler(bh, e, 'sd_vUQkRKSeGyoPkqw2');
+    }
+  }
+
   sd_ECslsIdgBu5LtNMc(bh) {
     try {
+      this.page.navItems = bh.local.navItems;
+
       //appendnew_next_sd_ECslsIdgBu5LtNMc
       return bh;
     } catch (e) {
@@ -93,7 +144,9 @@ export class navbarComponent {
         this.sdService.getPathAndQParamsObj(bh.input.path);
       await this.__page_injector__
         .get(Router)
-        .navigate([this.sdService.formatPathWithParams(path, undefined)]);
+        .navigate([this.sdService.formatPathWithParams(path, undefined)], {
+          queryParams: Object.assign(qprm, ''),
+        });
 
       //appendnew_next_sd_Dyu5Gh2ukt1z1vMO
       return bh;

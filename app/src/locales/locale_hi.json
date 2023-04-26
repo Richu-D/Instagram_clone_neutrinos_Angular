@@ -29,6 +29,12 @@
         "Privacy": "गोपनीयता",
         "Terms": "शर्तें",
         "Locations": "स्थानों",
-        "Language": "भाषा"
+        "Language": "भाषा",
+        "SharePhotos": "फोटो सांझा करें",
+        "profilePostsDescription": "जब आप फ़ोटो साझा करते हैं, तो वे आपकी प्रोफ़ाइल पर दिखाई देंगी.",
+        "shareYourFirstPhoto": "अपनी पहली तस्वीर साझा करें",
+        "noSavedPost": "कोई सहेजी गई पोस्ट उपलब्ध नहीं है",
+        "photosOfYou": "आप की तस्वीरें",
+        "profileTaggedDiscription": "जब लोग आपको फ़ोटो में टैग करेंगे, तो वे यहाँ दिखाई देंगे।"
     }
 }

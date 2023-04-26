@@ -23,7 +23,7 @@
         "y": 30,
         "wires": [
             [
-                "sd_AyLj7E5nMQfAmtl7"
+                "sd_MlnmqHHvGaAw6Kw3"
             ]
         ],
         "__n_excludedFromValidation__": {},
@@ -40,13 +40,43 @@
         "inputs": 1,
         "outputs": 1,
         "operation": "set",
-        "globalVariables": [],
+        "globalVariables": [
+            {
+                "textIp": "storys",
+                "typedIpValue": {
+                    "type": "bh.local",
+                    "value": "storys"
+                }
+            }
+        ],
         "functionName": "sd_AyLj7E5nMQfAmtl7",
         "category": "Function",
-        "x": 180,
-        "y": 30,
+        "x": 245,
+        "y": 40,
         "wires": [
             []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "StorysComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_MlnmqHHvGaAw6Kw3",
+        "type": "Script",
+        "z": "sd_1x008482niOHafiI",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "bh.local.storys = [\n    {\n        \"content\":\"/Web/img/person1.jpg\",\n        \"name\":\"richu\"\n    },\n    {\n        \"content\":\"/Web/img/person1.jpg\",\n        \"name\":\"richu\"\n    },\n    {\n        \"content\":\"/Web/img/person1.jpg\",\n        \"name\":\"richu\"\n    },\n    {\n        \"content\":\"/Web/img/person1.jpg\",\n        \"name\":\"richu\"\n    },\n]",
+        "functionName": "sd_MlnmqHHvGaAw6Kw3",
+        "category": "Function",
+        "x": 120,
+        "y": 40,
+        "wires": [
+            [
+                "sd_AyLj7E5nMQfAmtl7"
+            ]
         ],
         "__n_excludedFromValidation__": {},
         "generateNext": false,

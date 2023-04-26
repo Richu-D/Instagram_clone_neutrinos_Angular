@@ -52,7 +52,7 @@ export class StorysComponent {
 
   sd_o7KuT6i0u2Bkpi9X(bh) {
     try {
-      bh = this.sd_AyLj7E5nMQfAmtl7(bh);
+      bh = this.sd_MlnmqHHvGaAw6Kw3(bh);
       //appendnew_next_sd_o7KuT6i0u2Bkpi9X
       return bh;
     } catch (e) {
@@ -62,8 +62,40 @@ export class StorysComponent {
 
   //appendnew_flow_StorysComponent_start
 
+  sd_MlnmqHHvGaAw6Kw3(bh) {
+    try {
+      const page = this.page;
+      bh.local.storys = [
+        {
+          content: '/Web/img/person1.jpg',
+          name: 'richu',
+        },
+        {
+          content: '/Web/img/person1.jpg',
+          name: 'richu',
+        },
+        {
+          content: '/Web/img/person1.jpg',
+          name: 'richu',
+        },
+        {
+          content: '/Web/img/person1.jpg',
+          name: 'richu',
+        },
+      ];
+
+      bh = this.sd_AyLj7E5nMQfAmtl7(bh);
+      //appendnew_next_sd_MlnmqHHvGaAw6Kw3
+      return bh;
+    } catch (e) {
+      return this.errorHandler(bh, e, 'sd_MlnmqHHvGaAw6Kw3');
+    }
+  }
+
   sd_AyLj7E5nMQfAmtl7(bh) {
     try {
+      this.page.storys = bh.local.storys;
+
       //appendnew_next_sd_AyLj7E5nMQfAmtl7
       return bh;
     } catch (e) {

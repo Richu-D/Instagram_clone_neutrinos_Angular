@@ -5,10 +5,10 @@
       <div fxLayout="column " fxLayoutAlign="start center" [fxShow]="true">
         <div fxLayout="row wrap" fxLayoutAlign="center center" [fxShow]="true">
           <div>
-            rtb.kerala</div><button mat-button>{{page.locales.keys.EditProfile}}</button><span class="fa-solid fa-gear">
+            Richu D</div><button mat-button>{{page.locales.keys.EditProfile}}</button><span class="fa-solid fa-gear">
                 </span>
         </div>
-        <div fxLayout="row " style="width:300px;margin:15px" class="profile-details-count" fxLayoutAlign="space-around start" [fxShow]="true">
+        <div fxLayout="row " class="profile-details-count" fxLayoutAlign="space-around start" [fxShow]="true">
           <div>
             0 {{page.locales.keys.Posts}}</div>
           <div>
@@ -24,6 +24,35 @@
         </div>
       </div>
     </div>
-    <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true"><bh-Storys></bh-Storys></div><mat-tab-group mat-align-tabs="center" color="primary" headerPosition="below"><mat-tab label="{{page.locales.keys.Posts}}"></mat-tab><mat-tab label="{{page.locales.keys.Saved}}"></mat-tab><mat-tab label="{{page.locales.keys.Tagged}}"></mat-tab></mat-tab-group>
+    <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true"><bh-Storys></bh-Storys></div><mat-tab-group mat-align-tabs="center" color="primary"><mat-tab label="{{page.locales.keys.Posts}}">
+        <div fxLayout="column wrap" class="profile-posts-container" fxLayoutAlign="center center" [fxShow]="true"><span class="posts-icon fa-solid fa-camera">
+                </span>
+          <div style="font-weight:bold;font-size:1.5rem;">
+            {{page.locales.keys.SharePhotos}}
+          </div>
+          <div style="font-size:.8rem">
+            {{page.locales.keys.profilePostsDescription}}
+          </div>
+          <div style="font-size:.8rem;color:#1877F2;cursor:pointer;">
+            {{page.locales.keys.shareYourFirstPhoto}}
+          </div>
+        </div>
+      </mat-tab><mat-tab label="{{page.locales.keys.Saved}}">
+        <div fxLayout="column wrap" class="profile-posts-container" fxLayoutAlign="center center" [fxShow]="true">
+          <div style="font-weight:bold;font-size:1.5rem;">
+            {{page.locales.keys.noSavedPost}}
+          </div>
+        </div>
+      </mat-tab><mat-tab label="{{page.locales.keys.Tagged}}">
+        <div fxLayout="column wrap" class="profile-posts-container" fxLayoutAlign="center center" [fxShow]="true"><span class="posts-icon fa-sharp fa-solid fa-address-card">
+                </span>
+          <div style="font-weight:bold;font-size:1.5rem;">
+            {{page.locales.keys.photosOfYou}}
+          </div>
+          <div style="font-size:.8rem">
+            {{page.locales.keys.profileTaggedDiscription}}
+          </div>
+        </div>
+      </mat-tab></mat-tab-group><bh-Footer></bh-Footer>
   </div>
 </div>

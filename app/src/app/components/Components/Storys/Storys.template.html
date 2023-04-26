@@ -1,22 +1,7 @@
 <div fxLayout="row " class="story-row" fxLayoutAlign="start stretch" [fxShow]="true">
-  <div fxLayout="column wrap" class="story-name-container" fxLayoutAlign="start stretch" [fxShow]="true"><img imgSrc="/Web/img/person1.jpg" class="story-img">
+  <div fxLayout="column wrap" class="story-name-container" fxLayoutAlign="start stretch" [fxShow]="true" *ngFor="let story of page.storys"><img imgSrc="{{story.content}}" class="story-img">
     <div>
-      rtb.kerala</div>
-  </div>
-  <div fxLayout="column wrap" class="story-name-container" fxLayoutAlign="start stretch" [fxShow]="true"><img imgSrc="/Web/img/person1.jpg" class="story-img">
-    <div>
-      rtb.kerala</div>
-  </div>
-  <div fxLayout="column wrap" class="story-name-container" fxLayoutAlign="start stretch" [fxShow]="true"><img imgSrc="/Web/img/person1.jpg" class="story-img">
-    <div>
-      rtb.kerala</div>
-  </div>
-  <div fxLayout="column wrap" class="story-name-container" fxLayoutAlign="start stretch" [fxShow]="true"><img imgSrc="/Web/img/person1.jpg" class="story-img">
-    <div>
-      rtb.kerala</div>
-  </div>
-  <div fxLayout="column wrap" class="story-name-container" fxLayoutAlign="start stretch" [fxShow]="true"><img imgSrc="/Web/img/person1.jpg" class="story-img">
-    <div>
-      rtb.kerala</div>
+      {{story.name}}
+    </div>
   </div>
 </div>

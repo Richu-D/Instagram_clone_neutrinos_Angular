@@ -53,7 +53,7 @@ export class FooterComponent {
 
   sd_x87IRJ1J5ZIPQ6y0(bh) {
     try {
-      bh = this.sd_Au80SmALOgVjT4w2(bh);
+      bh = this.sd_ex3q217TKJb9er56(bh);
       //appendnew_next_sd_x87IRJ1J5ZIPQ6y0
       return bh;
     } catch (e) {
@@ -78,8 +78,48 @@ export class FooterComponent {
 
   //appendnew_flow_FooterComponent_start
 
+  sd_ex3q217TKJb9er56(bh) {
+    try {
+      const page = this.page;
+      bh.local.footerItems = [
+        {
+          name: 'About',
+        },
+        {
+          name: 'Help',
+        },
+        {
+          name: 'Press',
+        },
+        {
+          name: 'API',
+        },
+        {
+          name: 'Jobs',
+        },
+        {
+          name: 'Privacy',
+        },
+        {
+          name: 'Terms',
+        },
+        {
+          name: 'Locations',
+        },
+      ];
+
+      bh = this.sd_Au80SmALOgVjT4w2(bh);
+      //appendnew_next_sd_ex3q217TKJb9er56
+      return bh;
+    } catch (e) {
+      return this.errorHandler(bh, e, 'sd_ex3q217TKJb9er56');
+    }
+  }
+
   sd_Au80SmALOgVjT4w2(bh) {
     try {
+      this.page.footerItems = bh.local.footerItems;
+
       bh = this.sd_qp2Df3RuhmcXi3Wi(bh);
       //appendnew_next_sd_Au80SmALOgVjT4w2
       return bh;

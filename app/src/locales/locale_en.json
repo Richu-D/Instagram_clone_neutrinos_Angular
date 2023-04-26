@@ -29,6 +29,12 @@
         "Privacy": "Privacy",
         "Terms": "Terms",
         "Locations": "Locations",
-        "Language": "Language"
+        "Language": "Language",
+        "SharePhotos": "Share Photos",
+        "profilePostsDescription": "When you share photos, they will appear on your profile.",
+        "shareYourFirstPhoto": "Share your first photo",
+        "noSavedPost": "No Saved Post Available",
+        "photosOfYou": "Photos of you",
+        "profileTaggedDiscription": "When people tag you in photos, they'll appear here."
     }
 }

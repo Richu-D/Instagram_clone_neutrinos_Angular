@@ -1,16 +1,24 @@
 {
     "routes": [
         {
-            "path": "Home",
-            "component": "HomeComponent"
+            "path": "home",
+            "component": "HomeComponent",
+            "canActivate": {
+                "edited": true,
+                "value": ""
+            }
         },
         {
-            "path": "Profile",
-            "component": "ProfileComponent"
+            "path": "profile",
+            "component": "ProfileComponent",
+            "canActivate": {
+                "edited": true,
+                "value": ""
+            }
         },
         {
             "path": "''",
-            "redirectTo": "Home",
+            "redirectTo": "home",
             "pathMatch": "full",
             "default": true
         },

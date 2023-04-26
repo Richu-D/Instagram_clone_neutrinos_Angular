@@ -35,7 +35,7 @@
         "y": 30,
         "wires": [
             [
-                "sd_Au80SmALOgVjT4w2"
+                "sd_ex3q217TKJb9er56"
             ]
         ],
         "__n_excludedFromValidation__": {},
@@ -52,7 +52,15 @@
         "inputs": 1,
         "outputs": 1,
         "operation": "set",
-        "globalVariables": [],
+        "globalVariables": [
+            {
+                "textIp": "footerItems",
+                "typedIpValue": {
+                    "type": "bh.local",
+                    "value": "footerItems"
+                }
+            }
+        ],
         "functionName": "sd_Au80SmALOgVjT4w2",
         "category": "Function",
         "x": 180,
@@ -199,6 +207,28 @@
         "wires": [
             [
                 "sd_2ubq3ILpR5NZqpuN"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "FooterComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_ex3q217TKJb9er56",
+        "type": "Script",
+        "z": "sd_NtTYmyzyCWz8KKj3",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "bh.local.footerItems = [\n    {\n        \"name\":\"About\",\n    },\n    {\n        \"name\":\"Help\",\n    },\n    {\n        \"name\":\"Press\",\n    },\n    {\n        \"name\":\"API\",\n    },\n    {\n        \"name\":\"Jobs\",\n    },\n    {\n        \"name\":\"Privacy\",\n    },\n    {\n        \"name\":\"Terms\",\n    },\n    {\n        \"name\":\"Locations\",\n    },\n   \n]\n",
+        "functionName": "sd_ex3q217TKJb9er56",
+        "category": "Function",
+        "x": 100,
+        "y": 40,
+        "wires": [
+            [
+                "sd_Au80SmALOgVjT4w2"
             ]
         ],
         "__n_excludedFromValidation__": {},

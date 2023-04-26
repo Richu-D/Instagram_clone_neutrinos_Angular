@@ -27,7 +27,7 @@
         "y": 30,
         "wires": [
             [
-                "sd_ECslsIdgBu5LtNMc"
+                "sd_vUQkRKSeGyoPkqw2"
             ]
         ],
         "__n_excludedFromValidation__": {},
@@ -44,11 +44,19 @@
         "inputs": 1,
         "outputs": 1,
         "operation": "set",
-        "globalVariables": [],
+        "globalVariables": [
+            {
+                "textIp": "navItems",
+                "typedIpValue": {
+                    "type": "bh.local",
+                    "value": "navItems"
+                }
+            }
+        ],
         "functionName": "sd_ECslsIdgBu5LtNMc",
         "category": "Function",
-        "x": 180,
-        "y": 30,
+        "x": 245,
+        "y": 40,
         "wires": [
             []
         ],
@@ -97,16 +105,45 @@
         "viewType": "client-pages",
         "nodeType": "flow",
         "name": "",
+        "path": "",
         "pathMap": {
             "type": "bh.input",
             "value": "path"
         },
+        "pathparams": "",
+        "pathparamsMap": "",
+        "qparams": "",
+        "qparamsMap": "",
+        "qparamsArray": "",
+        "resultMapping": "",
         "functionName": "sd_Dyu5Gh2ukt1z1vMO",
         "category": "Navigation",
         "x": 180,
         "y": 180,
         "wires": [
             []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "navbarComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_vUQkRKSeGyoPkqw2",
+        "type": "Script",
+        "z": "sd_W1jueSNkFlur75gV",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "bh.local.navItems = [\n    {\n        \"name\":\"Home\",\n        \"class\":\"fa-solid fa-house\",\n        \"redirect\":\"/home\"\n    },\n    {\n        \"name\":\"Search\",\n        \"class\":\"fa-solid fa-magnifying-glass hide\",\n        \"redirect\":\"/search\"\n    },\n    {\n        \"name\":\"Explore\",\n        \"class\":\"fa-solid fa-compass\",\n        \"redirect\":\"/explore\"\n    },\n    {\n        \"name\":\"Reels\",\n        \"class\":\"fa-solid fa-video\",\n        \"redirect\":\"/reels\"\n    },\n    {\n        \"name\":\"Messages\",\n        \"class\":\"fa-brands fa-facebook-messenger\",\n        \"redirect\":\"/messages\"\n    },\n    {\n        \"name\":\"Notification\",\n        \"class\":\"fa-heart fa-regular hide\",\n        \"redirect\":\"/notification\"\n    },\n    {\n        \"name\":\"Create\",\n        \"class\":\"fa-regular fa-square-plus\",\n        \"redirect\":\"/create\"\n    },\n]\n",
+        "functionName": "sd_vUQkRKSeGyoPkqw2",
+        "category": "Function",
+        "x": 120,
+        "y": 40,
+        "wires": [
+            [
+                "sd_ECslsIdgBu5LtNMc"
+            ]
         ],
         "__n_excludedFromValidation__": {},
         "generateNext": false,

@@ -30,7 +30,13 @@
             "Privacy": "Privacy",
             "Terms": "Terms",
             "Locations": "Locations",
-            "Language": "Language"
+            "Language": "Language",
+            "SharePhotos": "Share Photos",
+            "profilePostsDescription": "When you share photos, they will appear on your profile.",
+            "shareYourFirstPhoto": "Share your first photo",
+            "noSavedPost": "No Saved Post Available",
+            "photosOfYou": "Photos of you",
+            "profileTaggedDiscription": "When people tag you in photos, they'll appear here."
         }
     },
     "ml": {
@@ -64,7 +70,13 @@
             "Privacy": "സ്വകാര്യത",
             "Terms": "നിബന്ധനകൾ",
             "Locations": "സ്ഥാനങ്ങൾ",
-            "Language": "ഭാഷ"
+            "Language": "ഭാഷ",
+            "SharePhotos": "ഫോട്ടോകൾ പങ്കിടുക",
+            "profilePostsDescription": "നിങ്ങൾ ഫോട്ടോകൾ പങ്കിടുമ്പോൾ, അവ നിങ്ങളുടെ പ്രൊഫൈലിൽ ദൃശ്യമാകും.",
+            "shareYourFirstPhoto": "നിങ്ങളുടെ ആദ്യ ഫോട്ടോ പങ്കിടുക",
+            "noSavedPost": "സംരക്ഷിച്ച പോസ്റ്റ് ലഭ്യമല്ല",
+            "photosOfYou": "നിങ്ങളുടെ ഫോട്ടോകൾ",
+            "profileTaggedDiscription": "ആളുകൾ നിങ്ങളെ ഫോട്ടോകളിൽ ടാഗ് ചെയ്യുമ്പോൾ, അവർ ഇവിടെ ദൃശ്യമാകും."
         }
     },
     "hi": {
@@ -98,7 +110,13 @@
             "Privacy": "गोपनीयता",
             "Terms": "शर्तें",
             "Locations": "स्थानों",
-            "Language": "भाषा"
+            "Language": "भाषा",
+            "SharePhotos": "फोटो सांझा करें",
+            "profilePostsDescription": "जब आप फ़ोटो साझा करते हैं, तो वे आपकी प्रोफ़ाइल पर दिखाई देंगी.",
+            "shareYourFirstPhoto": "अपनी पहली तस्वीर साझा करें",
+            "noSavedPost": "कोई सहेजी गई पोस्ट उपलब्ध नहीं है",
+            "photosOfYou": "आप की तस्वीरें",
+            "profileTaggedDiscription": "जब लोग आपको फ़ोटो में टैग करेंगे, तो वे यहाँ दिखाई देंगे।"
         }
     },
     "ta": {
@@ -132,7 +150,13 @@
             "Privacy": "தனியுரிமை",
             "Terms": "விதிமுறை",
             "Locations": "இடங்கள்",
-            "Language": "மொழி"
+            "Language": "மொழி",
+            "SharePhotos": "புகைப்படங்களைப் பகிரவும்",
+            "profilePostsDescription": "நீங்கள் புகைப்படங்களைப் பகிரும்போது, அவை உங்கள் சுயவிவரத்தில் தோன்றும்.",
+            "shareYourFirstPhoto": "உங்கள் முதல் படத்தைப் பகிரவும்",
+            "noSavedPost": "சேமித்த இடுகை இல்லை",
+            "photosOfYou": "உங்கள் புகைப்படங்கள்",
+            "profileTaggedDiscription": "புகைப்படங்களில் பிறர் உங்களைக் குறியிட்டால், அவர்கள் இங்கே தோன்றுவார்கள்."
         }
     }
 }
